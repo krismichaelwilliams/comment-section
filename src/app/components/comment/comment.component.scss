@@ -1,0 +1,39 @@
+@media screen and (max-width: 599px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .card {
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  .user-details {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+  }
+
+  .img-avatar {
+    width: 2em;
+  }
+
+  .label-username {
+    color: hsl(212, 24%, 26%);
+    font-weight: 700;
+  }
+
+  .label-created-at {
+    color: hsl(212, 10%, 66%);
+    font-weight: 500;
+  }
+
+  .label-content {
+    line-height: 1.5em;
+    color: hsl(211, 10%, 45%);
+  }
+}
