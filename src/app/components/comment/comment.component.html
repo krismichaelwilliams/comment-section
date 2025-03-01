@@ -1,24 +1,16 @@
 <div class="card">
   <div class="header">
-    <img
-      class="img-avatar"
-      src="images/avatars/image-amyrobson.png"
-      alt="Amy Robson"
-    />
-    <p class="label-username">amyrobson</p>
-    <p class="label-created-at">1 month ago</p>
+    <img class="img-avatar" [src]="comment.user.image.png" />
+    <p class="label-username">{{ comment.user.username }}</p>
+    <p class="label-created-at">{{ comment.createdAt }}</p>
   </div>
 
-  <p class="label-content">
-    Impressive! Though it seems the drag feature could be improved. But overall
-    it looks incredible. You've nailed the design and the responsiveness at
-    various breakpoints works really well.
-  </p>
+  <p class="label-content">{{ comment.content }}</p>
 
   <div class="footer">
     <span class="btn-upvote">
       <img src="images/icon-minus.svg" class="btn" />
-      12
+      {{ comment.score }}
       <img src="images/icon-plus.svg" class="btn" />
     </span>
     <span class="btn btn-reply">
