@@ -38,6 +38,15 @@ $white: hsl(0, 0%, 100%);
     font-weight: 700;
   }
 
+  .label-logged-in-user {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: $light-gray;
+    padding: 0.05em 0.5em 0.16em;
+    background-color: $moderate-blue;
+    border-radius: 0.2em;
+  }
+
   .label-created-at {
     color: $light-grayish-blue;
     font-weight: 500;
@@ -49,8 +58,30 @@ $white: hsl(0, 0%, 100%);
     margin-bottom: 1em;
   }
 
+  .label-replying-to {
+    color: $moderate-blue;
+    font-weight: 500;
+  }
+
   .btn {
+    display: flex;
+    gap: 0.25em;
     cursor: pointer;
+    align-items: center;
+  }
+
+  .btn-primary {
+    color: $moderate-blue;
+  }
+
+  .btn-delete {
+    color: $soft-red;
+  }
+
+  .btn-user-actions {
+    display: flex;
+    align-items: center;
+    gap: 1em;
   }
 
   .btn-upvote {
@@ -69,10 +100,5 @@ $white: hsl(0, 0%, 100%);
     justify-content: space-between;
     padding-right: 1em;
     font-weight: 500;
-  }
-
-  .replies {
-    border-left: 2px solid $light-gray;
-    padding-left: 1em;
   }
 }

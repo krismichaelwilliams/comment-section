@@ -1,14 +1,13 @@
 import { Avatar } from './avatar.model';
-import { CommentReply } from './comment-reply.model';
 
-export interface Comment {
+export interface CommentReply {
   id: number;
   content: string;
   createdAt: string;
   score: number;
+  replyingTo: string;
   user: {
     image: Avatar;
     username: string;
   };
-  replies: CommentReply[];
 }

@@ -19,3 +19,8 @@
     </span>
   </div>
 </div>
+
+<div class="replies">
+  @if (comment.replies.length > 0) { @for (reply of comment.replies; track
+  reply) { <app-reply [reply]="reply"></app-reply> } }
+</div>

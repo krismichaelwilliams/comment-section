@@ -15,6 +15,7 @@ describe('CommentComponent', () => {
     fixture = TestBed.createComponent(CommentComponent);
     component = fixture.componentInstance;
     component.comment = {
+      id: 1,
       content:
         "Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.",
       createdAt: '1 month ago',
@@ -26,6 +27,7 @@ describe('CommentComponent', () => {
         } satisfies Avatar,
         username: 'amyrobson',
       },
+      replies: [],
     } satisfies Comment;
     fixture.detectChanges();
   });

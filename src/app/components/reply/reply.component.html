@@ -1,0 +1,40 @@
+<div class="card">
+  <div class="header">
+    <img class="img-avatar" [src]="reply.user.image.png" />
+    <p class="label-username">{{ reply.user.username }}</p>
+    @if (loggedInUser === reply.user.username) {
+    <span class="label-logged-in-user">you</span>
+    }
+    <p class="label-created-at">{{ reply.createdAt }}</p>
+  </div>
+
+  <p class="label-content">
+    <span class="label-replying-to">&#64;{{ reply.replyingTo }}</span>
+    {{ reply.content }}
+  </p>
+
+  <div class="footer">
+    <span class="btn-upvote">
+      <img src="images/icon-minus.svg" class="btn" />
+      {{ reply.score }}
+      <img src="images/icon-plus.svg" class="btn" />
+    </span>
+    @if (loggedInUser === reply.user.username) {
+    <div class="btn-user-actions">
+      <span class="btn btn-delete">
+        <img src="images/icon-delete.svg" class="btn" />
+        Delete
+      </span>
+      <span class="btn btn-primary">
+        <img src="images/icon-edit.svg" class="btn" />
+        Edit
+      </span>
+    </div>
+    } @else {
+    <span class="btn btn-primary">
+      <img src="images/icon-reply.svg" class="btn" />
+      Reply
+    </span>
+    }
+  </div>
+</div>
