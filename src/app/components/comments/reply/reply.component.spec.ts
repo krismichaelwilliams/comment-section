@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReplyComponent } from './reply.component';
-import { Fakes } from '../../helpers/fakes';
+import { Fakes } from '../../../helpers/fakes';
 
 describe('ReplyComponent', () => {
   let component: ReplyComponent;

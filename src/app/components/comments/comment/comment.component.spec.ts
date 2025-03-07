@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CommentComponent } from './comment.component';
-import { Avatar } from '../../models/avatar.model';
-import { Comment } from '../../models/comment.model';
+import { Avatar } from '../../../models/avatar.model';
+import { Comment } from '../../../models/comment.model';
 
 describe('CommentComponent', () => {
   let component: CommentComponent;

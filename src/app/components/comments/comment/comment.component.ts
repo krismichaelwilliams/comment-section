@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
-import { Comment } from '../../models/comment.model';
-import { Avatar } from '../../models/avatar.model';
+import { Comment } from '../../../models/comment.model';
+import { Avatar } from '../../../models/avatar.model';
 import { ReplyComponent } from '../reply/reply.component';
 
 @Component({
   selector: 'app-comment',
   templateUrl: './comment.component.html',
-  styleUrl: './comment.component.scss',
+  styleUrl: '../comments.scss',
   imports: [ReplyComponent],
 })
 export class CommentComponent {
