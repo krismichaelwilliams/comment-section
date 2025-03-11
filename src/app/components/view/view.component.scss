@@ -1,9 +1,35 @@
 @media screen and (max-width: 599px) {
   main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     margin: 1em;
   }
 
-  app-comment {
+  .comments-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 120px;
+  }
+
+  .comments-window {
+    overflow-y: scroll;
     margin-bottom: 1em;
+  }
+
+  .user-comment {
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+    min-height: 100px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 }

@@ -1,5 +1,10 @@
 <main>
-  @for (comment of comments; track comment.id) {
-  <app-comment [comment]="comment"></app-comment>
-  }
+  <div class="comments-container">
+    <div class="comments-window">
+      @for (comment of comments; track comment.id) {
+      <app-comment [comment]="comment"></app-comment>
+      }
+    </div>
+    <div class="user-comment"></div>
+  </div>
 </main>
