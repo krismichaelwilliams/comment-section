@@ -1,6 +1,7 @@
 import type { Comment } from '../models/comment.model';
 import type { CommentReply } from '../models/comment-reply.model';
 import { Random } from 'random-test-values';
+import { User } from '../models/user.model';
 
 export class Fakes {
   static getFakeComments(): Comment[] {
@@ -17,7 +18,7 @@ export class Fakes {
             webp: Random.String(),
           },
           username: Random.String(),
-        },
+        } satisfies User,
         replies: this.getFakeReplies(),
       } satisfies Comment);
     }
@@ -40,7 +41,7 @@ export class Fakes {
               webp: Random.String(),
             },
             username: Random.String(),
-          },
+          } satisfies User,
         } satisfies CommentReply);
       }
     }
@@ -60,7 +61,7 @@ export class Fakes {
           webp: Random.String(),
         },
         username: Random.String(),
-      },
+      } satisfies User,
     } satisfies CommentReply;
   }
 }
